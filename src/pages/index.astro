@@ -3,25 +3,33 @@ import ContactLinks from '../components/ContactLinks';
 import FooterCredits from '../components/FooterCredits';
 import MainHeading from '../components/MainHeading.astro';
 import Navbar from '../components/Navbar.astro';
+import OtherSkillsCarousel from '../components/OtherSkillsCarousel.astro';
 import ProjectSection from '../components/ProjectSection.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title='Juan Miguel Villalobos Sanchez'>
-  <main>
-    <header class='sticky top-0 bg-slate-500'>
-      <Navbar />
-    </header>
-
-    <section class='h-[89vh] flex flex-col justify-center items-center'>
+  <header class='sticky top-0 z-10'>
+    <Navbar />
+  </header>
+  <main class='px-6'>
+    <section
+      class='h-[89vh] flex flex-col justify-center items-center'
+      id='home'
+    >
       <div class='flex flex-col gap-5 justify-center items-center'>
-        <h1 class='text-[17vh] leading-3 font-apfelGrotezk'>Juan Miguel</h1>
-        <h1 class='text-[17vh] font-apfelGrotezk'>Villalobos Sanchez</h1>
+        <h1
+          class='text-[10vw] lg:text-[8vw] font-apfelGrotezk text-center leading-tight'
+        >
+          Juan Miguel Villalobos Sanchez
+        </h1>
       </div>
-      <p class='text-5xl'>Hi. I'm a full stack web developer.</p>
+      <p class='text-[5vw] lg:text-[3vw]'>
+        Hi. I'm a full stack web developer.
+      </p>
     </section>
 
-    <section class='max-w-2xl m-auto'>
+    <section class='max-w-2xl m-auto text-lg pt-16' id='projects'>
       <MainHeading title='Projects' />
 
       <ProjectSection
@@ -108,41 +116,41 @@ import Layout from '../layouts/Layout.astro';
         </p>
       </ProjectSection>
     </section>
-  </main>
 
-  <section class='max-w-2xl m-auto'>
-    <h1
-      class='font-apfelGrotezk text-6xl sm:text-8xl pb-16 flex justify-center'
+    <section class='max-w-2xl m-auto text-lg min-h-screen pb-40'>
+      <MainHeading title='Other Skills' />
+
+      <OtherSkillsCarousel />
+
+      <p class='text-center pt-4'>
+        I am also skilled in Adobe Photoshop and Premiere Pro
+      </p>
+
+      <!-- Add cards with hover describing what it is. Vids are just gifs. Pics are pics. -->
+    </section>
+
+    <section
+      class='max-w-2xl m-auto min-h-screen pb-40 text-lg pt-16'
+      id='about'
     >
-      Other Skills
-    </h1>
+      <MainHeading title='About Me' />
 
-    <p class='text-center'>
-      I am also skilled in Adobe Photoshop and Premiere Pro
-    </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto harum
+        nihil excepturi reprehenderit veniam non quae sequi? Iure odit earum
+        numquam consectetur reprehenderit sed illum perspiciatis reiciendis
+        temporibus, dolor rerum!
+      </p>
+    </section>
 
-    <!-- Add cards with hover describing what it is. Vids are just gifs. Pics are pics. -->
-  </section>
+    <section class='max-w-2xl m-auto text-lg pt-16' id='contact'>
+      <MainHeading title='Contact Me' />
 
-  <section class='max-w-2xl m-auto min-h-screen pb-40'>
-    <MainHeading title='About Me' />
-
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto harum nihil
-      excepturi reprehenderit veniam non quae sequi? Iure odit earum numquam
-      consectetur reprehenderit sed illum perspiciatis reiciendis temporibus,
-      dolor rerum!
-    </p>
-  </section>
-
-  <section class='max-w-2xl m-auto'>
-    <MainHeading title='Contact Me' />
-
-    <div class='pb-32'>
-      <ContactLinks />
-    </div>
-  </section>
-
+      <div class='pb-32'>
+        <ContactLinks />
+      </div>
+    </section>
+  </main>
   <footer class='flex justify-between p-3 bg-slate-500'>
     <div>Juan Miguel Villalobos Sanchez</div>
     <div>

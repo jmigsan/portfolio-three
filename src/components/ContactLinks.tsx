@@ -17,7 +17,7 @@ const ContactLinks = () => {
           </a>
         </div>
         <div>
-          <a href='emailto:juanmigsanchez@ymail.com'>
+          <a href='mailto:juanmigsanchez@ymail.com'>
             <IoMail className='inline' /> Email
           </a>
         </div>
