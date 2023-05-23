@@ -6,7 +6,7 @@ const ProjectLinks: React.FC<{ Github: string; Site: string }> = ({
   Site,
 }) => {
   return (
-    <div className='flex gap-2 item'>
+    <div className='flex gap-2 item text-lg'>
       <a href={Github}>
         GitHub <FaGithub className='inline' />
       </a>

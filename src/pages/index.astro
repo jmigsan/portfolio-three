@@ -1,153 +1,152 @@
 ---
 import ContactLinks from '../components/ContactLinks';
-import ProjectLinks from '../components/ProjectLinks';
+import FooterCredits from '../components/FooterCredits';
+import MainHeading from '../components/MainHeading.astro';
+import Navbar from '../components/Navbar.astro';
+import ProjectSection from '../components/ProjectSection.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title='Juan Miguel Villalobos Sanchez'>
   <main>
     <header class='sticky top-0 bg-slate-500'>
-      <!-- TODO: Make opacity blurry -->
-      <nav>
-        <div class='flex items-center'>
-          <div>
-            <div>Juan Miguel</div>
-            <div>Villalobos Sanchez</div>
-          </div>
-          <ul>
-            <li class='inline m-3'>Home</li>
-            <li class='inline m-3'>Projects</li>
-            <li class='inline m-3'>About</li>
-            <li class='inline m-3'>Contact</li>
-          </ul>
-        </div>
-      </nav>
+      <Navbar />
     </header>
 
-    <section>
-      <div>
-        <h1>Juan Miguel</h1>
-        <h1>Villalobos Sanchez</h1>
+    <section class='h-[89vh] flex flex-col justify-center items-center'>
+      <div class='flex flex-col gap-5 justify-center items-center'>
+        <h1 class='text-[17vh] leading-3 font-apfelGrotezk'>Juan Miguel</h1>
+        <h1 class='text-[17vh] font-apfelGrotezk'>Villalobos Sanchez</h1>
       </div>
-      <p>Hi. I'm a full stack web developer.</p>
+      <p class='text-5xl'>Hi. I'm a full stack web developer.</p>
     </section>
 
-    <section>
-      <h1>Projects</h1>
+    <section class='max-w-2xl m-auto'>
+      <MainHeading title='Projects' />
 
-      <section>
-        <img
-          src='../../public/assets/penguins.jpg'
-          alt='Penguins'
-          class='max-w-xl'
-        />
-        <section>
-          <h2>Schooled</h2>
-          <p>
-            The Netherlands has a long and fascinating history that goes back
-            thousands of years. The land was once home to ancient tribes, Roman
-            soldiers, and Frankish kings. It became part of various empires and
-            kingdoms, such as the Holy Roman Empire, the Burgundian Netherlands,
-            and the Spanish Netherlands.
-          </p>
-          <p>
-            It fought for its independence from Spain in the 16th and 17th
-            centuries, and became a powerful republic with a global empire and a
-            golden age of trade, art, and science. It faced many challenges and
-            changes in the 18th and 19th centuries, such as wars, revolutions,
-            invasions, and reforms.
-          </p>
-          <p>
-            It became a modern constitutional monarchy in 1815, and a founding
-            member of the European Union in 1957. Today, it is a prosperous and
-            progressive country with a rich culture and a diverse population.
-          </p>
-          <div>
-            <ProjectLinks Github='' Site='' />
-          </div>
-        </section>
-      </section>
+      <ProjectSection
+        title='Sleeper'
+        img='../../assets/images/penguins.jpg'
+        imgAlt='Penguins'
+        github=''
+        site=''
+      >
+        <p>
+          The Netherlands has a long and fascinating history that goes back
+          thousands of years. The land was once home to ancient tribes, Roman
+          soldiers, and Frankish kings. It became part of various empires and
+          kingdoms, such as the Holy Roman Empire, the Burgundian Netherlands,
+          and the Spanish Netherlands.
+        </p>
+        <p>
+          It fought for its independence from Spain in the 16th and 17th
+          centuries, and became a powerful republic with a global empire and a
+          golden age of trade, art, and science. It faced many challenges and
+          changes in the 18th and 19th centuries, such as wars, revolutions,
+          invasions, and reforms.
+        </p>
+        <p>
+          It became a modern constitutional monarchy in 1815, and a founding
+          member of the European Union in 1957. Today, it is a prosperous and
+          progressive country with a rich culture and a diverse population.
+        </p>
+      </ProjectSection>
 
-      <section>
-        <img src='../../public/assets/bear.jpg' alt='Bear' class='max-w-xl' />
-        <section>
-          <h2>Sleeper</h2>
-          <p>
-            The Netherlands has a long and fascinating history that goes back
-            thousands of years. The land was once home to ancient tribes, Roman
-            soldiers, and Frankish kings. It became part of various empires and
-            kingdoms, such as the Holy Roman Empire, the Burgundian Netherlands,
-            and the Spanish Netherlands.
-          </p>
-          <p>
-            It fought for its independence from Spain in the 16th and 17th
-            centuries, and became a powerful republic with a global empire and a
-            golden age of trade, art, and science. It faced many challenges and
-            changes in the 18th and 19th centuries, such as wars, revolutions,
-            invasions, and reforms.
-          </p>
-          <p>
-            It became a modern constitutional monarchy in 1815, and a founding
-            member of the European Union in 1957. Today, it is a prosperous and
-            progressive country with a rich culture and a diverse population.
-          </p>
-          <div>
-            <ProjectLinks Github='' Site='' />
-          </div>
-        </section>
-      </section>
+      <ProjectSection
+        title='Schooled'
+        img='../../assets/images/lady.jpg'
+        imgAlt='Lady'
+        github=''
+        site=''
+      >
+        <p>
+          The Netherlands has a long and fascinating history that goes back
+          thousands of years. The land was once home to ancient tribes, Roman
+          soldiers, and Frankish kings. It became part of various empires and
+          kingdoms, such as the Holy Roman Empire, the Burgundian Netherlands,
+          and the Spanish Netherlands.
+        </p>
+        <p>
+          It fought for its independence from Spain in the 16th and 17th
+          centuries, and became a powerful republic with a global empire and a
+          golden age of trade, art, and science. It faced many challenges and
+          changes in the 18th and 19th centuries, such as wars, revolutions,
+          invasions, and reforms.
+        </p>
+        <p>
+          It became a modern constitutional monarchy in 1815, and a founding
+          member of the European Union in 1957. Today, it is a prosperous and
+          progressive country with a rich culture and a diverse population.
+        </p>
+      </ProjectSection>
 
-      <section>
-        <img src='../../public/assets/lady.jpg' alt='Lady' class='max-w-xl' />
-        <section>
-          <h2>Msgs2</h2>
-          <p>
-            The Netherlands has a long and fascinating history that goes back
-            thousands of years. The land was once home to ancient tribes, Roman
-            soldiers, and Frankish kings. It became part of various empires and
-            kingdoms, such as the Holy Roman Empire, the Burgundian Netherlands,
-            and the Spanish Netherlands.
-          </p>
-          <p>
-            It fought for its independence from Spain in the 16th and 17th
-            centuries, and became a powerful republic with a global empire and a
-            golden age of trade, art, and science. It faced many challenges and
-            changes in the 18th and 19th centuries, such as wars, revolutions,
-            invasions, and reforms.
-          </p>
-          <p>
-            It became a modern constitutional monarchy in 1815, and a founding
-            member of the European Union in 1957. Today, it is a prosperous and
-            progressive country with a rich culture and a diverse population.
-          </p>
-          <div>
-            <ProjectLinks Github='' Site='' />
-          </div>
-        </section>
-      </section>
+      <ProjectSection
+        title='Msgs2'
+        img='../../assets/images/bear.jpg'
+        imgAlt='Bear'
+        github=''
+        site=''
+      >
+        <p>
+          The Netherlands has a long and fascinating history that goes back
+          thousands of years. The land was once home to ancient tribes, Roman
+          soldiers, and Frankish kings. It became part of various empires and
+          kingdoms, such as the Holy Roman Empire, the Burgundian Netherlands,
+          and the Spanish Netherlands.
+        </p>
+        <p>
+          It fought for its independence from Spain in the 16th and 17th
+          centuries, and became a powerful republic with a global empire and a
+          golden age of trade, art, and science. It faced many challenges and
+          changes in the 18th and 19th centuries, such as wars, revolutions,
+          invasions, and reforms.
+        </p>
+        <p>
+          It became a modern constitutional monarchy in 1815, and a founding
+          member of the European Union in 1957. Today, it is a prosperous and
+          progressive country with a rich culture and a diverse population.
+        </p>
+      </ProjectSection>
     </section>
-
-    <section>
-      <h1>Other Skills</h1>
-      <p>I am also skilled in Adobe Photoshop and Premiere Pro</p>
-      <!-- Add cards with hover describing what it is. Vids are just gifs. Pics are pics. -->
-    </section>
-
-    <section>
-      <h1>About Me</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto harum
-        nihil excepturi reprehenderit veniam non quae sequi? Iure odit earum
-        numquam consectetur reprehenderit sed illum perspiciatis reiciendis
-        temporibus, dolor rerum!
-      </p>
-    </section>
-
-    <section>
-      <h1>Contact Me</h1>
-      <ContactLinks />
-    </section>
-
-    <footer>Juan Miguel Villalobos Sanchez</footer>
   </main>
+
+  <section class='max-w-2xl m-auto'>
+    <h1
+      class='font-apfelGrotezk text-6xl sm:text-8xl pb-16 flex justify-center'
+    >
+      Other Skills
+    </h1>
+
+    <p class='text-center'>
+      I am also skilled in Adobe Photoshop and Premiere Pro
+    </p>
+
+    <!-- Add cards with hover describing what it is. Vids are just gifs. Pics are pics. -->
+  </section>
+
+  <section class='max-w-2xl m-auto min-h-screen pb-40'>
+    <MainHeading title='About Me' />
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto harum nihil
+      excepturi reprehenderit veniam non quae sequi? Iure odit earum numquam
+      consectetur reprehenderit sed illum perspiciatis reiciendis temporibus,
+      dolor rerum!
+    </p>
+  </section>
+
+  <section class='max-w-2xl m-auto'>
+    <MainHeading title='Contact Me' />
+
+    <div class='pb-32'>
+      <ContactLinks />
+    </div>
+  </section>
+
+  <footer class='flex justify-between p-3 bg-slate-500'>
+    <div>Juan Miguel Villalobos Sanchez</div>
+    <div>
+      <FooterCredits client:visible />
+    </div>
+  </footer>
 </Layout>

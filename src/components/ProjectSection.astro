@@ -1,0 +1,26 @@
+---
+import ProjectLinks from './ProjectLinks';
+
+interface Props {
+  title: string;
+  img: string;
+  imgAlt: string;
+  github: string;
+  site: string;
+}
+
+const { title, img, imgAlt, github, site } = Astro.props;
+---
+
+<section class='min-h-screen pb-40'>
+  <div class='flex justify-center'>
+    <img src={img} alt={imgAlt} />
+  </div>
+  <h2 class='text-center font-apfelGrotezk text-4xl py-9'>{title}</h2>
+  <div class='text-lg'>
+    <slot />
+  </div>
+  <div class='flex justify-center pt-9'>
+    <ProjectLinks Github={github} Site={site} />
+  </div>
+</section>

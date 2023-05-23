@@ -29,7 +29,17 @@ const { title } = Astro.props;
   </body>
 </html>
 <style is:global>
-  html {
-    font-family: system-ui, sans-serif;
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  @font-face {
+    font-family: 'Apfel Grotezk';
+    src: url('../../assets/fonts/ApfelGrotezk-Fett.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Apfel Grotezk Regular';
+    src: url('../../assets/fonts/ApfelGrotezk-Regular.woff2') format('woff2');
   }
 </style>

@@ -4,16 +4,24 @@ import { IoMail } from 'react-icons/io5';
 
 const ContactLinks = () => {
   return (
-    <div className='flex flex-col'>
-      <a href='https://www.linkedin.com/in/jmigsan/'>
-        <FaLinkedin className='inline' /> LinkedIn
-      </a>
-      <a href='https://github.com/jmigsan'>
-        <FaGithub className='inline' /> Github
-      </a>
-      <a href='emailto:juanmigsanchez@ymail.com'>
-        <IoMail className='inline' /> Email
-      </a>
+    <div className='flex justify-center'>
+      <div className='flex flex-col gap-8 text-6xl  '>
+        <div>
+          <a href='https://www.linkedin.com/in/jmigsan/'>
+            <FaLinkedin className='inline' /> LinkedIn
+          </a>
+        </div>
+        <div>
+          <a href='https://github.com/jmigsan'>
+            <FaGithub className='inline' /> Github
+          </a>
+        </div>
+        <div>
+          <a href='emailto:juanmigsanchez@ymail.com'>
+            <IoMail className='inline' /> Email
+          </a>
+        </div>
+      </div>
     </div>
   );
 };
