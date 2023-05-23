@@ -1,81 +1,153 @@
 ---
+import ContactLinks from '../components/ContactLinks';
+import ProjectLinks from '../components/ProjectLinks';
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
-	</main>
-</Layout>
+<Layout title='Juan Miguel Villalobos Sanchez'>
+  <main>
+    <header class='sticky top-0 bg-slate-500'>
+      <!-- TODO: Make opacity blurry -->
+      <nav>
+        <div class='flex items-center'>
+          <div>
+            <div>Juan Miguel</div>
+            <div>Villalobos Sanchez</div>
+          </div>
+          <ul>
+            <li class='inline m-3'>Home</li>
+            <li class='inline m-3'>Projects</li>
+            <li class='inline m-3'>About</li>
+            <li class='inline m-3'>Contact</li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-<style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
-</style>
+    <section>
+      <div>
+        <h1>Juan Miguel</h1>
+        <h1>Villalobos Sanchez</h1>
+      </div>
+      <p>Hi. I'm a full stack web developer.</p>
+    </section>
+
+    <section>
+      <h1>Projects</h1>
+
+      <section>
+        <img
+          src='../../public/assets/penguins.jpg'
+          alt='Penguins'
+          class='max-w-xl'
+        />
+        <section>
+          <h2>Schooled</h2>
+          <p>
+            The Netherlands has a long and fascinating history that goes back
+            thousands of years. The land was once home to ancient tribes, Roman
+            soldiers, and Frankish kings. It became part of various empires and
+            kingdoms, such as the Holy Roman Empire, the Burgundian Netherlands,
+            and the Spanish Netherlands.
+          </p>
+          <p>
+            It fought for its independence from Spain in the 16th and 17th
+            centuries, and became a powerful republic with a global empire and a
+            golden age of trade, art, and science. It faced many challenges and
+            changes in the 18th and 19th centuries, such as wars, revolutions,
+            invasions, and reforms.
+          </p>
+          <p>
+            It became a modern constitutional monarchy in 1815, and a founding
+            member of the European Union in 1957. Today, it is a prosperous and
+            progressive country with a rich culture and a diverse population.
+          </p>
+          <div>
+            <ProjectLinks Github='' Site='' />
+          </div>
+        </section>
+      </section>
+
+      <section>
+        <img src='../../public/assets/bear.jpg' alt='Bear' class='max-w-xl' />
+        <section>
+          <h2>Sleeper</h2>
+          <p>
+            The Netherlands has a long and fascinating history that goes back
+            thousands of years. The land was once home to ancient tribes, Roman
+            soldiers, and Frankish kings. It became part of various empires and
+            kingdoms, such as the Holy Roman Empire, the Burgundian Netherlands,
+            and the Spanish Netherlands.
+          </p>
+          <p>
+            It fought for its independence from Spain in the 16th and 17th
+            centuries, and became a powerful republic with a global empire and a
+            golden age of trade, art, and science. It faced many challenges and
+            changes in the 18th and 19th centuries, such as wars, revolutions,
+            invasions, and reforms.
+          </p>
+          <p>
+            It became a modern constitutional monarchy in 1815, and a founding
+            member of the European Union in 1957. Today, it is a prosperous and
+            progressive country with a rich culture and a diverse population.
+          </p>
+          <div>
+            <ProjectLinks Github='' Site='' />
+          </div>
+        </section>
+      </section>
+
+      <section>
+        <img src='../../public/assets/lady.jpg' alt='Lady' class='max-w-xl' />
+        <section>
+          <h2>Msgs2</h2>
+          <p>
+            The Netherlands has a long and fascinating history that goes back
+            thousands of years. The land was once home to ancient tribes, Roman
+            soldiers, and Frankish kings. It became part of various empires and
+            kingdoms, such as the Holy Roman Empire, the Burgundian Netherlands,
+            and the Spanish Netherlands.
+          </p>
+          <p>
+            It fought for its independence from Spain in the 16th and 17th
+            centuries, and became a powerful republic with a global empire and a
+            golden age of trade, art, and science. It faced many challenges and
+            changes in the 18th and 19th centuries, such as wars, revolutions,
+            invasions, and reforms.
+          </p>
+          <p>
+            It became a modern constitutional monarchy in 1815, and a founding
+            member of the European Union in 1957. Today, it is a prosperous and
+            progressive country with a rich culture and a diverse population.
+          </p>
+          <div>
+            <ProjectLinks Github='' Site='' />
+          </div>
+        </section>
+      </section>
+    </section>
+
+    <section>
+      <h1>Other Skills</h1>
+      <p>I am also skilled in Adobe Photoshop and Premiere Pro</p>
+      <!-- Add cards with hover describing what it is. Vids are just gifs. Pics are pics. -->
+    </section>
+
+    <section>
+      <h1>About Me</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto harum
+        nihil excepturi reprehenderit veniam non quae sequi? Iure odit earum
+        numquam consectetur reprehenderit sed illum perspiciatis reiciendis
+        temporibus, dolor rerum!
+      </p>
+    </section>
+
+    <section>
+      <h1>Contact Me</h1>
+      <ContactLinks />
+    </section>
+
+    <footer>Juan Miguel Villalobos Sanchez</footer>
+  </main>
+</Layout>
