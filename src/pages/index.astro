@@ -1,6 +1,6 @@
 ---
-import ContactLinks from '../components/ContactLinks';
-import FooterCredits from '../components/FooterCredits';
+import ContactLinks from '../components/ContactLinks.astro';
+import FooterCredits from '../components/FooterCredits.astro';
 import MainHeading from '../components/MainHeading.astro';
 import Navbar from '../components/Navbar.astro';
 import OtherSkillsCarousel from '../components/OtherSkillsCarousel.astro';
@@ -9,7 +9,7 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title='Juan Miguel Villalobos Sanchez'>
-  <header class='sticky top-0 z-10'>
+  <header class='fixed top-0 z-10'>
     <Navbar />
   </header>
   <main class='px-6'>
@@ -104,10 +104,11 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </section>
   </main>
+
   <footer class='flex justify-between p-3'>
     <div>Juan Miguel Villalobos Sanchez</div>
     <div>
-      <FooterCredits client:visible />
+      <FooterCredits />
     </div>
   </footer>
 </Layout>

@@ -1,5 +1,5 @@
 ---
-import ProjectLinks from './ProjectLinks';
+import ProjectLinks from './ProjectLinks.astro';
 
 interface Props {
   title: string;
@@ -21,6 +21,6 @@ const { title, img, imgAlt, github, site } = Astro.props;
     <slot />
   </div>
   <div class='flex justify-center pt-9'>
-    <ProjectLinks Github={github} Site={site} />
+    <ProjectLinks github={github} site={site} />
   </div>
 </section>
