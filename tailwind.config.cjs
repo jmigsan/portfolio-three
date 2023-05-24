@@ -10,7 +10,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        apfelGrotezk: ['Apfel Grotezk', 'sans-serif'],
+        display: ['Nacelle Bold', 'sans-serif'],
       },
     },
   },

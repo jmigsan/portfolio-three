@@ -13,18 +13,20 @@ import Layout from '../layouts/Layout.astro';
     <Navbar />
   </header>
   <main class='px-6'>
+    <!-- TODO: Indication to scroll. -->
+
     <section
       class='h-[100vh] flex flex-col justify-center items-center'
       id='home'
     >
       <div class='flex flex-col justify-center items-center'>
         <h1
-          class='text-[10vw] lg:text-[8vw] font-apfelGrotezk text-center leading-none'
+          class='text-[10vw] lg:text-[8vw] font-display text-center leading-none'
         >
           Juan Miguel
         </h1>
         <h1
-          class='text-[10vw] lg:text-[8vw] font-apfelGrotezk text-center leading-none'
+          class='text-[10vw] lg:text-[8vw] font-display text-center leading-none'
         >
           Villalobos Sanchez
         </h1>
@@ -36,6 +38,10 @@ import Layout from '../layouts/Layout.astro';
 
     <section class='max-w-2xl mx-auto text-lg pt-16 -m-16' id='projects'>
       <MainHeading title='Projects' />
+
+      <!-- TODO: Parallax on images -->
+      <!-- TODO: Images follow mouse -->
+      <!-- TODO: Videos come in from side -->
 
       <ProjectSection
         title='Sleeper'
