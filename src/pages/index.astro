@@ -8,36 +8,41 @@ import ProjectSection from '../components/ProjectSection.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title='Juan Miguel Villalobos Sanchez'>
+<Layout title='Juan Miguel Villalobos Sanchez | Portfolio'>
   <header class='fixed top-0 z-10'>
     <Navbar />
   </header>
   <main class='px-6'>
     <section
-      class='h-[87vh] flex flex-col justify-center items-center'
+      class='h-[100vh] flex flex-col justify-center items-center'
       id='home'
     >
-      <div class='flex flex-col gap-5 justify-center items-center'>
+      <div class='flex flex-col justify-center items-center'>
         <h1
-          class='text-[10vw] lg:text-[8vw] font-apfelGrotezk text-center leading-tight'
+          class='text-[10vw] lg:text-[8vw] font-apfelGrotezk text-center leading-none'
         >
-          Juan Miguel Villalobos Sanchez
+          Juan Miguel
+        </h1>
+        <h1
+          class='text-[10vw] lg:text-[8vw] font-apfelGrotezk text-center leading-none'
+        >
+          Villalobos Sanchez
         </h1>
       </div>
-      <p class='text-[5vw] lg:text-[3vw]'>
+      <p class='text-[5vw] lg:text-[3vw] text-center pt-4'>
         Hi. I'm a full stack web developer.
       </p>
     </section>
 
-    <section class='max-w-2xl mx-auto text-lg pt-16' id='projects'>
+    <section class='max-w-2xl mx-auto text-lg pt-16 -m-16' id='projects'>
       <MainHeading title='Projects' />
 
       <ProjectSection
         title='Sleeper'
-        img='../../assets/images/penguins.jpg'
-        imgAlt='Penguins'
-        github=''
-        site=''
+        img='https://res.cloudinary.com/jmigsan/image/upload/v1684893019/portfolio-three/sleeper_p6oucl.png'
+        imgAlt='Sleeper App'
+        github='https://github.com/jmigsan/sleeper'
+        site='https://sleeper.up.railway.app/'
       >
         <p>
           A sleeping schedule speculative market web app. Built with Next.js,
@@ -49,8 +54,8 @@ import Layout from '../layouts/Layout.astro';
         title='Schooled'
         img='../../assets/images/lady.jpg'
         imgAlt='Lady'
-        github=''
-        site=''
+        github='https://github.com/jmigsan/schooled'
+        site='https://schooled-jade.vercel.app/'
       >
         <p>
           A Twitter clone to post controversial educational content. Built with
@@ -62,8 +67,8 @@ import Layout from '../layouts/Layout.astro';
         title='Msgs2'
         img='../../assets/images/bear.jpg'
         imgAlt='Bear'
-        github=''
-        site=''
+        github='https://github.com/jmigsan/sleeper'
+        site='https://msgs2.vercel.app/'
       >
         <p>
           A direct messaging app. Built with Next.js, React, TypeScript, tRPC,
