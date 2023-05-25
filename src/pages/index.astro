@@ -12,10 +12,7 @@ import Layout from '../layouts/Layout.astro';
   <header class='fixed top-0 z-10'>
     <Navbar />
   </header>
-  <!-- TODO: Make 4K, even 1440p, friendly -->
   <main class='px-6'>
-    <!-- TODO: Indication to scroll. -->
-
     <section
       class='h-[100vh] flex flex-col justify-center items-center'
       id='home'
@@ -35,6 +32,10 @@ import Layout from '../layouts/Layout.astro';
       <p class='text-[5vw] lg:text-[3vw] text-center pt-4'>
         Hi. I'm a full stack web developer.
       </p>
+      <!-- TODO: Finish indication to scroll. When scroll down a bit, it disappears.
+        Make arrow that goes to scroll down when hovered over. -->
+      <!-- SVG arrow down goes here-->
+      <!-- <div class='absolute bottom-0 right-0 p-6'>Scroll Down</div> -->
     </section>
 
     <section class='max-w-2xl mx-auto text-lg pt-16 -m-16' id='projects'>
@@ -43,6 +44,7 @@ import Layout from '../layouts/Layout.astro';
       <!-- TODO: Parallax on images -->
       <!-- TODO: Images follow mouse -->
       <!-- TODO: Videos come in from side -->
+      <!-- TODO: Make so when over a project, a rotating or something video of something relevant translates in. -->
 
       <ProjectSection
         title='Sleeper'
@@ -84,7 +86,7 @@ import Layout from '../layouts/Layout.astro';
       </ProjectSection>
     </section>
 
-    <section class='max-w-2xl m-auto text-lg min-h-screen pb-40'>
+    <section class='max-w-2xl m-auto text-lg pb-40 pt-16'>
       <MainHeading title='Other Skills' />
 
       <!-- <OtherSkillsCarousel /> -->
@@ -96,10 +98,7 @@ import Layout from '../layouts/Layout.astro';
       <!-- Add cards with hover describing what it is. Vids are just gifs. Pics are pics. -->
     </section>
 
-    <section
-      class='max-w-2xl m-auto min-h-screen pb-40 text-lg pt-16'
-      id='about'
-    >
+    <section class='max-w-2xl m-auto pb-40 text-lg pt' id='about'>
       <MainHeading title='About Me' />
 
       <p class='text-center'>
