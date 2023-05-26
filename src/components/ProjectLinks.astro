@@ -8,7 +8,7 @@ const { github, site } = Astro.props;
 ---
 
 <div class='flex gap-4 item'>
-  <a href={github} class='flex gap-2'>
+  <a href={github} class='flex gap-2' target='_blank' rel='noopener noreferrer'>
     GitHub
     <svg
       xmlns='http://www.w3.org/2000/svg'
@@ -21,7 +21,7 @@ const { github, site } = Astro.props;
       ></path>
     </svg>
   </a>
-  <a href={site} class='flex gap-1'>
+  <a href={site} class='flex gap-1' target='_blank' rel='noopener noreferrer'>
     View site
     <svg
       xmlns='http://www.w3.org/2000/svg'
