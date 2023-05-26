@@ -10,7 +10,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        display: ['Nacelle Bold', 'sans-serif'],
+        display: ['Nacelle Heavy', 'sans-serif'],
       },
     },
   },
