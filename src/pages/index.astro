@@ -3,7 +3,6 @@ import ContactLinks from '../components/ContactLinks.astro';
 import FooterCredits from '../components/FooterCredits.astro';
 import MainHeading from '../components/MainHeading.astro';
 import Navbar from '../components/Navbar.astro';
-import OtherSkillsCarousel from '../components/OtherSkillsCarousel.astro';
 import ProjectSection from '../components/ProjectSection.astro';
 import ScrollDown from '../components/ScrollDown.astro';
 import Layout from '../layouts/Layout.astro';
@@ -20,12 +19,12 @@ import Layout from '../layouts/Layout.astro';
     >
       <div class='flex flex-col justify-center items-center'>
         <h1
-          class='text-[10vw] lg:text-[7vw] font-display text-center leading-none'
+          class='text-[10vw] lg:text-[6vw] font-display text-center leading-none'
         >
           Juan Miguel
         </h1>
         <h1
-          class='text-[10vw] lg:text-[7vw] font-display text-center leading-tight'
+          class='text-[10vw] lg:text-[6vw] font-display text-center leading-tight'
         >
           Villalobos Sanchez
         </h1>
@@ -33,19 +32,11 @@ import Layout from '../layouts/Layout.astro';
       <p class='text-[5vw] lg:text-[2.5vw] text-center pt-4'>
         Hi. I'm a full stack web developer.
       </p>
-      <!-- TODO: Finish indication to scroll. When scroll down a bit, it disappears.
-        Make arrow that goes to scroll down when hovered over. -->
-      <!-- SVG arrow down goes here-->
       <ScrollDown />
     </section>
 
     <section class='max-w-2xl mx-auto pt-16' id='projects'>
       <MainHeading title='Projects' />
-
-      <!-- TODO: Parallax on images -->
-      <!-- TODO: Images follow mouse -->
-      <!-- TODO: Videos come in from side -->
-      <!-- TODO: Make so when over a project, a rotating or something video of something relevant translates in. -->
 
       <ProjectSection
         title='Sleeper'
@@ -90,13 +81,9 @@ import Layout from '../layouts/Layout.astro';
     <section class='max-w-2xl m-auto pb-40 pt-16'>
       <MainHeading title='Other Skills' />
 
-      <!-- <OtherSkillsCarousel /> -->
-
       <p class='sm:text-center'>
         I am also skilled in Adobe Photoshop, Adobe Premiere Pro, and Python.
       </p>
-
-      <!-- Add cards with hover describing what it is. Vids are just gifs. Pics are pics. -->
     </section>
 
     <section class='max-w-2xl m-auto pb-40 pt' id='about'>
