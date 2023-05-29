@@ -14,11 +14,13 @@ const { title, img, imgAlt, github, site } = Astro.props;
 
 <section class='pb-40'>
   <div class='flex justify-center'>
-    <img
-      src={img}
-      alt={imgAlt}
-      class='rounded-3xl border-solid border-2 border-black'
-    />
+    <a href={site} target='_blank' rel='noopener noreferrer'>
+      <img
+        src={img}
+        alt={imgAlt}
+        class='rounded-3xl border-solid border-2 border-black'
+      />
+    </a>
   </div>
   <h2 class='text-center font-display text-4xl py-9'>{title}</h2>
   <div>
